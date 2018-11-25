@@ -1,0 +1,101 @@
+.container-fluid>.row>.header>h1
+{
+	text-align: center;
+	color: blue;
+}		/* for header(FRRUIT FRESH)*/
+
+.container-fluid>.row>.seller>.jumbotron
+{
+	background: lightpink;
+	margin-top: 10%;
+	opacity: 0.2px;
+}/*FOR 1ST JUMBOTRON */
+
+.container-fluid>.row>.cust>.jumbotron
+{
+	background: lightblue;
+	margin-top: 10%;
+}/*FOR 2ND JUMBOTRON*/
+
+.heading
+{
+	text-align: center;
+	height: 50px;
+	width: 520px;
+	
+	margin-top: 50px;
+	background-color:black;
+	color: white;
+	opacity: 0.7;
+}/*FOR HEADINGS (CUSTOMER AND RETAILER REGISTRATION)*/
+
+label
+{
+	margin-left: 10px;
+}/*FOR LABELS IN REGISTRATION*/
+
+.form1
+{
+	height: 650px;
+	width: 520px;
+	
+	/*margin-left: 500px;*/
+	margin-top: 0px;
+	background-color:teal;
+	opacity: 0.7;
+}/*FOR REGFORMS(R&C)*/
+
+.a
+{
+	height: 30px;
+	width: 450px;
+	
+	margin-top: 20px;
+	margin-left: 20px;
+}/*FOR TEXT FIELDS IN FORMS*/
+
+/*.button
+{
+	background-color: #606060;
+	color: white;
+	height: 20px;
+	width: 450px;
+	
+	margin-top: 20px;
+	margin-left: 20px;
+}*/
+img
+{
+	width: 20%;
+	vertical-align: middle;
+	float: left;
+}
+body
+{
+	/*background-image: url("f.jpg");*/
+	    background-repeat: no-repeat;
+	      background-size: cover; /* Resize the background image to cover the entire container */
+
+}/*FOR BODY */
+
+/*.container>.row>.form1 p
+{
+	display: none;
+}*/
+.container>.row>div:nth-child(2)>form p
+		{
+			display: none;
+			color: red;
+		}/*FOR WARNING MESAGES*/	
+
+.container>.row>div:nth-child(2)>form>button
+		{
+			display: block;
+			margin:0px auto;
+			background-color: #84e184;
+		}/*FOR BUTTON IN FORMS*/
+
+.container-fluid>.row>img
+{
+	margin-left: 20px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="jss/script.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  					<div class="container-fluid">
+    					<div class="navbar-header">
+      						<a class="navbar-brand" href="#" style="color: white;">Fruit It</a>
+    					</div>
+    					<ul class="nav navbar-nav">
+     						 <li class="" "><a href="homepage.html" style="color: white;">Home</a></li>
+      						<li><a href="homepage.html" style="color: white;">About Us</a></li>
+      						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">REGISTRATION <span class="caret"></span></a>
+      							<ul class="dropdown-menu">
+          							<li><a href="retailer-reg.html">Seller/Retailer SignUp</a></li>
+          							<li><a href="customer-reg.html">Customer SignUp</a></li>
+          							
+        						</ul>
+     						
+    					</ul>
+  					</div>
+		</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<form name="f1" action="php/retailerreg.php" method="POST" >
+					<div class="heading">
+						<h3 style="margin-top: 50px;">RETAILERS REGISTRATION</h3>
+					</div>
+						<div class="form1">
+							<div >
+								<label for="email">Email</label>
+								<input type="text" name="email" class="a" placeholder="Enter your Email Id" id="e1" onkeyup="validate('useremail')">
+								<p id="error_email">enter valid email id</p>
+	
+							</div><br>
+
+							<div >
+								<label for="firstname">FirstName</label><br>
+								<input type="text" name="fn" class="a" placeholder="Enter your FirstName" id="fn1" onkeyup="validate('firstname')"><br>
+								<p id="error_firstname">required</p>
+
+							</div><br>
+
+							<div >
+								<label>LastName</label><br>
+								<input type="text" name="ln" class="a" placeholder="Enter your LastName" id="ln1" onkeyup="validate('lastname')"><br>
+								<p id="error_lastname">required</p>
+							</div><br>
+
+							<div >
+								<label>Address</label><br>
+								<input type="text" name="add" class="a" placeholder="Enter your Address" id="add" onkeyup="validate('')"><br>
+							</div><br>
+
+							<div >
+								<label>PAN Number</label><br>
+								<input type="text" name="pan" class="a" placeholder="Enter your PAN Name" id="pn" onkeyup="validate()"><br>	
+							</div><br>
+
+							<div >
+								<label>Enter UR Password</label><br>
+								<input type="password" name="pass" class="a" placeholder="Enter your Password" id="ps" onkeyup="validate('password')"><br>	
+								<p id="error_password">enter valid password</p>
+							</div><br>
+
+							<div >
+							<label>Confirm Password</label><br>
+								<input type="password" name="cp" class="a" placeholder="Retype your password" id="cp" onkeyup="validate('confirm_password')" onfocus="cheking()"><br>
+							<p id="error_confirmpassword">confirm password</p>
+							</div><br>
+
+							<label>Shop Name</label><br>
+								<input type="text" name="sname" class="a" placeholder="Enter your shop name" id="sn" onkeyup="validate('sname')" ><br>
+							<p id="error_shopname">Enter your shop name</p>
+							</div><br>
+
+							<button type="submit" id="form_button" value="submit" class="btn btn-default" onclick="form_send()" disabled="true" style="align-self: center;">REGISTER</button>
+							
+									</div>
+
+				</form>
+			
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>
+
+</body>
+</html>
