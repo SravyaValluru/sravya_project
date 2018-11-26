@@ -25,6 +25,7 @@ if (mysqli_num_rows($result) == 1) {
 else
 {
   echo "failed";
+   header("Location:../custlogin.html");
 }
    /*if(($username=="ram")&&($password=="1234"))
    {
