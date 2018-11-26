@@ -15,7 +15,7 @@ You can download the XAMPP server from any browser and setup the environment by 
 
 # Databases
 1. Open the XAMPP Control Panel.
-2. Click on the Admin button under MySQL then a page will be opened. In this window there will be a new button click on it will helps you create a new database or you can import the database dump so that you will get a database named fruitdb and you will get some tables in that dump.
+2. Click on the Admin button under MySQL then a page will be opened. In this window there will be a new button click on it will helps you create a new database or you can import the database dump(that is provided in fruitdb.sql) so that you will get a database named fruitdb and you will get some tables in that dump.
 
 # Code
 1. Move all the files into a floder.
