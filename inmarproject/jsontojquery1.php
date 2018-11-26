@@ -150,7 +150,7 @@
 <body style="background-image: url(css/reg12.jpg);background-repeat: no-repeat;
 	      background-size: cover; ">
 	<div class="head">
-			<h3 style="font-family:TimesNewRoman; font-size: 55px; color: white;text-align: center;">Fruit It</h3>
+			<h3 style="font-family:TimesNewRoman; font-size: 55px; color: black;text-align: center;">Fruit It</h3>
 		</div>
 		<nav class="navbar navbar-inverse">
   					<div class="container-fluid">
