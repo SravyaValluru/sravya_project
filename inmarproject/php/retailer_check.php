@@ -25,16 +25,7 @@ if (mysqli_num_rows($result) == 1) {
 else
 {
   echo "failed";
+   header("Location:../retailerlogin.html");
 }
-   /*if(($username=="ram")&&($password=="1234"))
-   {
-       setcookie("test","x", time() + (86400 * 30), "/");
-       setcookie("test2","x2", time() + (86400 * 30), "/");
-       //echo "<h1>This is fine</h1>";
-       header("Location:index.php");
-   }
-   else
-   {
-         header("Location:login.html");
-   }*/
+   
 ?>
