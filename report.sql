@@ -14,7 +14,7 @@ email	firstname		lastname		address		password		mobilenumber
 
 ORDERS SCHEMA
 
-order(tablename)
+orders(tablename)
 
 seller_email	customer_email	quantity
 
@@ -34,8 +34,15 @@ query: Select COUNT(email) from retailer;
 
 2.Write SQL to get the shoppers counts for each retailer (who purchased).
 
-query: Select COUNT(customer_email) from orders where seller_email = '$s_email';
+query: Select COUNT(customer_email) from orders where seller_email = '$_COOKIE('seller_email')';
 
 3.Write SQL to get all the shoppers count.
 
 query: Select COUNT(email) from customer;
+
+4. Write SQL to get purchase amount per amount per day wrt to a retailer
+
+query: SELECT count(customer_email)*100 FROM orders WHERE seller_email = '$_COOKIE['seller_email']' AND DATE('timestamp') = CURDATE();
+
+5. Write SQL to find the top retailer based on number of purchases
+query: SELECT seller_email FROM orders WHERE MAX(SELECT count(seller_email) FROM orsers); 
